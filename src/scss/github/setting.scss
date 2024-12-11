@@ -1,0 +1,167 @@
+.set {
+
+  &__border {
+    border-left: 1px solid var(--bg-border);
+    border-bottom: 1px solid var(--bg-border);
+    border-right: 1px solid var(--bg-border);
+    padding-left: toRem(15);
+  }
+
+  &__block {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__rename--title {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__rename--text {
+    margin-bottom: 10px;
+  }
+
+  &__rename-flex {
+    display: flex;
+  }
+
+  &__rename--left {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: var(--bg-input);
+    border: 1px solid var(--bg-border);
+    border-radius: 3px;
+    width: 180px;
+  }
+
+  &__rename--right {
+    padding: 5px 10px;
+    background-color: var(--bg-input);
+    border: 1px solid var(--bg-border);
+    border-radius: 3px;
+  }
+
+  &__subtitle {
+    margin-bottom: toRem(0);
+  }
+
+  &__chek-flex {
+    display: flex;
+  }
+
+  &__chek--input {
+    margin-right: 10px;
+  }
+
+  &__chek--text {
+
+    & h5 {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    & p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__highlight {
+    display: flex;
+    background-color: rgb(7, 23, 44, .5);
+    padding: 15px;
+    border: 1px solid #204980;
+    border-radius: 5px;
+    margin: 0 20px 15px 25px;
+
+
+    &--left {
+      flex: 1 1 auto;
+      margin-top: 10px;
+      padding-right: 15px;
+
+      & h5 {
+        font-style: italic;
+        font-weight: bold;
+        padding-bottom: 5px;
+      }
+    }
+
+    &--right {
+      flex: 0 0 230px;
+      align-self: center;
+      margin-right: 15px;
+    }
+
+    &--btn {
+      background-color: var(--bg-btn);
+      padding: 5px;
+      border: 1px solid var(--bg-border);
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  &__select {
+
+    padding-top: 5px;
+
+    select {
+      background-color: var(--bg-input);
+      padding: 10px;
+      margin-bottom: 15px;
+      color: #fff;
+      border: 1px solid var(--bg-border);
+      border-radius: 5px;
+
+      & option {
+        border: 1px solid var(--bg-border);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &__red {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  &__danger {
+    &-flex {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--bg-border);
+      margin-top: 15px;
+    }
+
+    &--left h5 {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    &--right {
+      align-self: center;
+      color: red;
+      background-color: var(--bg-input);
+      border: 1px solid var(--bg-border);
+      border-radius: 5px;
+      text-align: center;
+      padding: 5px 10px;
+
+    }
+  }
+}
+
+.block-right {
+  margin-left: 30px;
+}
+
+.pt {
+  padding-top: 15px;
+}
+
+.pl {
+  padding-left: 22px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"GitHub"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/github/_nav.htm',{})
+			@@include('html/github/_page.htm',{})
+			@@include('html/github/_new.htm',{})
+			@@include('html/github/_branch.htm',{})
+
+			@@include('html/github/_settins.htm',{})
+			@@include('html/github/_faq.htm',{})
+			@@include('html/github/_translate.htm',{})
+		</main>
+
+		@@include('html/_footer.htm',{})
+	</div>
+
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
