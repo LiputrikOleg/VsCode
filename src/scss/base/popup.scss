@@ -1,0 +1,120 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+
+.popup-show body::after {
+	opacity: 1;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 10px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background-color: #696666;
+	padding: 20px;
+	width: 100%;
+	max-width: 985px;
+	border-radius: 20px;
+
+	.lock & {
+		visibility: visible;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+}
+
+.popup__close {
+	color: #37dc58;
+	padding-bottom: 10px;
+}
+
+// Доп стили 
+.ppopup {
+	&:hover img {
+		width: 150%;
+		transition: all .3s;
+	}
+}
+
+.popup__content--vert {
+	max-width: 400px !important;
+}
+
+.popup__text--flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popup-green {
+	color: #37dc58;
+}
+
+.popup__flex {
+	margin-top: toRem(10);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+
+
+	&--item {
+		max-width: 430px;
+
+		& img {
+			padding-bottom: 10px;
+		}
+
+		& p:nth-child(3) {
+			font-size: 12px;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+// Translite
+
+.translate__title {
+  margin-bottom: 0;
+}
+
+.tr {
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--item {
+      background-color: var(--bg-item);
+      flex: 1 1 20%;
+      padding: 10px;
+      margin: 15px;
+
+      & summary {
+        font-size: 18px;
+        font-style: italic;
+      }
+    }
+  }
+
+
+  &__table {
+    border-collapse: collapse;
+
+    & tr td {
+      padding: 5px 15px;
+      border-left: 1px solid var(--bg-border);
+      border-right: 1px solid var(--bg-border);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.branch__subtitle {
+  margin-bottom: 0;
+}
+
+.branch__block {
+  margin-top: toRem(15);
+
+  &--list {
+    padding-left: toRem(15);
+    padding-bottom: toRem(5);
+
+    li {
+      padding-bottom: 5px;
+    }
+  }
+}

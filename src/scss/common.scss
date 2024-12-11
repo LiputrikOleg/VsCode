@@ -1,0 +1,110 @@
+// Заголовки, общие БЄМ блоки и прочее...
+// Заголовки, общие БЄМ блоки и прочее...
+
+html {
+  scrollbar-color: #49515f #141414;
+}
+
+h1 {
+  @include adaptiveValue("font-size", 42, 36);
+  line-height: 1.5;
+  margin-top: toRem(15);
+  margin-bottom: toRem(30);
+}
+
+h2 {
+  @include adaptiveValue("font-size", 32, 26);
+  line-height: 1.3;
+  margin-bottom: toRem(15);
+}
+
+h3 {
+  @include adaptiveValue("font-size", 26, 22);
+  line-height: 1.3;
+  margin-bottom: toRem(15);
+}
+
+h4 {
+  @include adaptiveValue("font-size", 22, 20);
+  line-height: 1.3;
+
+}
+
+p {
+  line-height: 1.25;
+  margin-bottom: toRem(12);
+}
+
+pre {
+  margin-top: toRem(15);
+  margin-bottom: toRem(15);
+}
+
+pre code {
+  @include adaptiveValue("font-size", 13, 12);
+}
+
+// выделение цветом
+
+.green {
+  color: var(--bg-btn)
+}
+
+.gray {
+  color: var(--text);
+}
+
+.white {
+  color: var(--text-white);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cursiv {
+  font-style: italic;
+}
+
+.small {
+  font-size: 11px;
+}
+
+.warning {
+  border-left: 4px solid red;
+  padding-left: 5px;
+}
+
+
+//   Основные контейнеры
+
+.git__content--item {
+  background-color: var(--bg-item);
+  border: 1px solid var(--bg-border);
+  border-radius: 3px;
+  padding-left: .9375rem;
+  padding-right: toRem(15);
+  padding-top: toRem(8);
+  // margin-left: 8px;
+  // margin-right: 8px;
+  // margin-bottom: toRem(15);
+}
+
+.git__title {
+  color: var(--text-white);
+}
+
+.git__hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--bg-border);
+}
+
+.git__link {
+  color: var(--text-link);
+  transition: color .3s;
+
+  &:hover {
+    color: var(--text-link-hover);
+  }
+}
